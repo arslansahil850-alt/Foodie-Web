@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffaf3">
+    <title>Crave Kitchen | Fresh Food, Happy Moments</title>
+    <meta name="description"
+        content="Discover delicious meals, explore our menu, and order your favorite food from Crave Kitchen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <p>Fresh ingredients. Amazing flavors. Made with love.</p>
+        <a href="#menu">Explore Menu <span>↗</span></a>
+    </div>
+
+    <header class="header" id="home">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">C</span>
+                <span class="logo-text">Crave<span>Kitchen</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Our Menu</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#specials" class="nav-link">Specials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button" class="cart-button" aria-label="Shopping cart">
+                    <span>Cart</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="search-panel" id="searchPanel">
+            <div class="container search-inner">
+                <input type="search" id="searchInput" placeholder="Search burgers, pizza, pasta..."
+                    aria-label="Search food">
+                <button type="button" id="searchButton">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow"><span class="eyebrow-line"></span> GOOD FOOD, GOOD MOOD</span>
+
+                    <h1>Food that makes <span>every bite</span> memorable.</h1>
+
+                    <p class="hero-description">
+                        From handcrafted burgers to irresistible desserts,
+                        discover fresh flavors made to bring people together.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Explore Our Menu <span>↗</span></a>
+                        <a href="#about" class="btn btn-secondary">Discover Our Story</a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="avatar-stack">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="Customer">
+                            <img src="https://i.pravatar.cc/80?img=47" alt="Customer">
+                            <img src="https://i.pravatar.cc/80?img=33" alt="Customer">
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <strong>1,200+ Happy Customers</strong>
+                            <p>Making every meal special</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+                            alt="Fresh gourmet burger served with delicious toppings">
+                    </div>
+
+                    <div class="floating-card rating-card">
+                        <span class="rating-star">★</span>
+                        <div>
+                            <strong>4.9/5 Rating</strong>
+                            <p>Loved by foodies</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card delivery-card">
+                        <span class="delivery-icon">↗</span>
+                        <div>
+                            <strong>Fast Delivery</strong>
+                            <p>Fresh at your door</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-decoration"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container features-grid">
+
+                <article class="feature-item">
+                    <span class="feature-icon">✳</span>
+                    <div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Quality in every bite</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-icon">♨</span>
+                    <div>
+                        <h3>Made to Order</h3>
+                        <p>Prepared just for you</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-icon">♧</span>
+                    <div>
+                        <h3>Fast Delivery</h3>
+                        <p>Good food, right on time</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-icon">♡</span>
+                    <div>
+                        <h3>Made with Love</h3>
+                        <p>Flavor you'll remember</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow"><span class="eyebrow-line"></span> EXPLORE OUR MENU</span>
+                        <h2>Something delicious <span>for everyone.</span></h2>
+                        <p>Discover your next favorite meal, freshly prepared every day.</p>
+                    </div>
+
+                    <div class="menu-actions">
+                        <button type="button" class="text-link" id="moreMenuBtn">
+                            Show More Menu <span>↗</span>
+                        </button>
+                        <button type="button" class="text-link" id="showLessMenuBtn" hidden>
+                            Show Less <span>↗</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="category-list" id="categoryList">
+                    <button class="category-btn active" data-category="all">All Dishes</button>
+                    <button class="category-btn" data-category="burgers">Burgers</button>
+                    <button class="category-btn" data-category="pizza">Pizza</button>
+                    <button class="category-btn" data-category="pasta">Pasta</button>
+                    <button class="category-btn" data-category="sides">Sides</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="drinks">Drinks</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+
+                    <article class="food-card" data-category="burgers" data-name="classic cheeseburger">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                                alt="Classic cheeseburger">
+                            <span class="food-badge">Bestseller</span>
+                            <button class="favorite-btn" aria-label="Add Classic Cheeseburger to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Classic Cheeseburger</h3>
+                                <span class="food-rating">★ 4.9</span>
+                            </div>
+                            <p>Juicy beef, melted cheese, fresh lettuce and our signature sauce.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="850">Rs. 850</strong>
+                                <button class="add-to-cart" data-id="burger1" data-name="Classic Cheeseburger"
+                                    data-price="850"
+                                    data-image="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Classic Cheeseburger to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="pizza" data-name="margherita pizza">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+                                alt="Fresh Margherita pizza">
+                            <button class="favorite-btn" aria-label="Add Margherita Pizza to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Margherita Pizza</h3>
+                                <span class="food-rating">★ 4.8</span>
+                            </div>
+                            <p>Stone-baked crust, tomato sauce, mozzarella and fresh basil.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="1200">Rs. 1,200</strong>
+                                <button class="add-to-cart" data-id="pizza1" data-name="Margherita Pizza"
+                                    data-price="1200"
+                                    data-image="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Margherita Pizza to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="pasta" data-name="creamy alfredo pasta">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=600&q=80"
+                                alt="Creamy Alfredo pasta">
+                            <span class="food-badge">Chef's Pick</span>
+                            <button class="favorite-btn" aria-label="Add Alfredo Pasta to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Creamy Alfredo Pasta</h3>
+                                <span class="food-rating">★ 4.9</span>
+                            </div>
+                            <p>Rich creamy sauce, parmesan, herbs and perfectly cooked pasta.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="950">Rs. 950</strong>
+                                <button class="add-to-cart" data-id="pasta1" data-name="Creamy Alfredo Pasta"
+                                    data-price="950"
+                                    data-image="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Alfredo Pasta to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="burgers" data-name="crispy chicken burger">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
+                                alt="Crispy chicken burger">
+                            <button class="favorite-btn" aria-label="Add Crispy Chicken Burger to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Crispy Chicken Burger</h3>
+                                <span class="food-rating">★ 4.7</span>
+                            </div>
+                            <p>Crispy chicken, crunchy lettuce and creamy spicy mayo.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="750">Rs. 750</strong>
+                                <button class="add-to-cart" data-id="burger2" data-name="Crispy Chicken Burger"
+                                    data-price="750"
+                                    data-image="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Crispy Chicken Burger to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sides" data-name="loaded french fries">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80"
+                                alt="Golden French fries">
+                            <button class="favorite-btn" aria-label="Add Loaded French Fries to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Loaded French Fries</h3>
+                                <span class="food-rating">★ 4.6</span>
+                            </div>
+                            <p>Golden crispy fries topped with our special seasoning.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="450">Rs. 450</strong>
+                                <button class="add-to-cart" data-id="side1" data-name="Loaded French Fries"
+                                    data-price="450"
+                                    data-image="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Loaded French Fries to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="desserts" data-name="chocolate brownie">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+                                alt="Chocolate brownie dessert">
+                            <span class="food-badge">Sweet Favorite</span>
+                            <button class="favorite-btn" aria-label="Add Chocolate Brownie to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Chocolate Brownie</h3>
+                                <span class="food-rating">★ 4.9</span>
+                            </div>
+                            <p>Rich chocolate brownie with a soft center and decadent flavor.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="500">Rs. 500</strong>
+                                <button class="add-to-cart" data-id="dessert1" data-name="Chocolate Brownie"
+                                    data-price="500"
+                                    data-image="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Chocolate Brownie to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="drinks" data-name="fresh strawberry smoothie">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=80"
+                                alt="Fresh strawberry smoothie">
+                            <button class="favorite-btn" aria-label="Add Strawberry Smoothie to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Strawberry Smoothie</h3>
+                                <span class="food-rating">★ 4.7</span>
+                            </div>
+                            <p>Refreshing strawberry blend with a smooth, creamy finish.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="400">Rs. 400</strong>
+                                <button class="add-to-cart" data-id="drink1" data-name="Strawberry Smoothie"
+                                    data-price="400"
+                                    data-image="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Strawberry Smoothie to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="pizza" data-name="pepperoni pizza">
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80"
+                                alt="Pepperoni pizza">
+                            <button class="favorite-btn" aria-label="Add Pepperoni Pizza to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Pepperoni Pizza</h3>
+                                <span class="food-rating">★ 4.8</span>
+                            </div>
+                            <p>Cheesy pizza loaded with pepperoni and rich tomato sauce.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="1450">Rs. 1,450</strong>
+                                <button class="add-to-cart" data-id="pizza2" data-name="Pepperoni Pizza"
+                                    data-price="1450"
+                                    data-image="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Pepperoni Pizza to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card extra-dish" data-category="pizza" data-name="classic cheese pizza" hidden>
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
+                                alt="Classic cheese pizza">
+                            <span class="food-badge">Classic Favorite</span>
+                            <button class="favorite-btn" aria-label="Add Classic Cheese Pizza to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Classic Cheese Pizza</h3>
+                                <span class="food-rating">★ 4.8</span>
+                            </div>
+                            <p>Freshly baked pizza topped with melted cheese and aromatic herbs.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="1299">Rs. 1,299</strong>
+                                <button class="add-to-cart" data-id="pizza3" data-name="Classic Cheese Pizza"
+                                    data-price="1299"
+                                    data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Classic Cheese Pizza to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card extra-dish" data-category="burgers" data-name="double beef burger" hidden>
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                                alt="Double beef burger">
+                            <span class="food-badge">Double Delight</span>
+                            <button class="favorite-btn" aria-label="Add Double Beef Burger to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Double Beef Burger</h3>
+                                <span class="food-rating">★ 4.9</span>
+                            </div>
+                            <p>Two juicy beef patties layered with cheese, fresh lettuce and signature sauce.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="899">Rs. 899</strong>
+                                <button class="add-to-cart" data-id="burger3" data-name="Double Beef Burger"
+                                    data-price="899"
+                                    data-image="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Double Beef Burger to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card extra-dish" data-category="pasta" data-name="herb alfredo pasta" hidden>
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80"
+                                alt="Creamy herb Alfredo pasta">
+                            <span class="food-badge">Chef's Pick</span>
+                            <button class="favorite-btn" aria-label="Add Herb Alfredo Pasta to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Herb Alfredo Pasta</h3>
+                                <span class="food-rating">★ 4.8</span>
+                            </div>
+                            <p>Silky Alfredo sauce, tender pasta and fragrant Italian herbs in every bite.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="1099">Rs. 1,099</strong>
+                                <button class="add-to-cart" data-id="pasta2" data-name="Herb Alfredo Pasta"
+                                    data-price="1099"
+                                    data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Herb Alfredo Pasta to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card extra-dish" data-category="desserts" data-name="chocolate ice cream"
+                        hidden>
+                        <div class="food-image">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80"
+                                alt="Chocolate ice cream dessert">
+                            <span class="food-badge">Sweet Favorite</span>
+                            <button class="favorite-btn" aria-label="Add Chocolate Ice Cream to favorites">♡</button>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title-row">
+                                <h3>Chocolate Ice Cream</h3>
+                                <span class="food-rating">★ 4.9</span>
+                            </div>
+                            <p>Rich, creamy chocolate ice cream for the perfect sweet finish.</p>
+                            <div class="food-bottom">
+                                <strong class="food-price" data-price="599">Rs. 599</strong>
+                                <button class="add-to-cart" data-id="dessert2" data-name="Chocolate Ice Cream"
+                                    data-price="599"
+                                    data-image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=200&q=80"
+                                    aria-label="Add Chocolate Ice Cream to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+                </div>
+
+                <p class="empty-state" id="emptyState" hidden>No dishes found. Try another search or category.</p>
+
+            </div>
+        </section>
+
+        <section class="special-section section-padding" id="specials">
+            <div class="container special-grid">
+
+                <div class="special-image">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85"
+                        alt="Delicious freshly prepared restaurant meal">
+                    <div class="special-tag">
+                        <span>CHEF'S</span>
+                        <strong>SPECIAL</strong>
+                    </div>
+                </div>
+
+                <div class="special-content">
+                    <span class="eyebrow"><span class="eyebrow-line"></span> MADE FOR FOOD LOVERS</span>
+                    <h2>Great food. <span>Better moments.</span></h2>
+                    <p>
+                        Discover our chef's special selection, made with carefully
+                        chosen ingredients and flavors worth coming back for.
+                    </p>
+
+                    <ul class="special-list">
+                        <li><span>✓</span> Fresh ingredients prepared daily</li>
+                        <li><span>✓</span> Unique recipes and bold flavors</li>
+                        <li><span>✓</span> Something delicious for every craving</li>
+                    </ul>
+
+                    <a href="#menu" class="btn btn-primary">Find Your Favorite <span>↗</span></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section section-padding" id="about">
+            <div class="container about-grid">
+
+                <div class="about-content">
+                    <span class="eyebrow"><span class="eyebrow-line"></span> OUR STORY</span>
+                    <h2>More than food. <span>It's an experience.</span></h2>
+
+                    <p>
+                        At Crave Kitchen, we believe great food brings people together.
+                        Our passion is creating delicious meals from quality ingredients,
+                        served with care and a little extra love.
+                    </p>
+
+                    <p>
+                        Whether you're sharing a meal with friends or enjoying a quiet
+                        evening at home, we're here to make every bite count.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary">Get to Know Us <span>↗</span></a>
+                </div>
+
+                <div class="about-visual">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85"
+                        alt="Welcoming restaurant dining atmosphere">
+
+                    <div class="about-stat">
+                        <strong>100%</strong>
+                        <span>Passion in Every Dish</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimonials-section section-padding">
+            <div class="container">
+
+                <div class="section-heading centered-heading">
+                    <div>
+                        <span class="eyebrow"><span class="eyebrow-line"></span> CUSTOMER LOVE</span>
+                        <h2>Good food speaks <span>for itself.</span></h2>
+                        <p>Here's what our food lovers have to say.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"The burger was delicious, the ingredients tasted fresh, and the presentation was excellent.
+                            Definitely ordering again."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Customer Sarah">
+                            <div>
+                                <h3>Sarah Ahmed</h3>
+                                <span>Food Lover</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Loved the pasta and the overall experience. The menu has something for everyone, and the
+                            food was worth it."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=47" alt="Customer Hamza">
+                            <div>
+                                <h3>Hamza Ali</h3>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"A great place for satisfying cravings. The menu is easy to explore, and the dessert was a
+                            perfect finish."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Customer Ayesha">
+                            <div>
+                                <h3>Ayesha Khan</h3>
+                                <span>Happy Customer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container newsletter-grid">
+                <div>
+                    <span class="eyebrow">A LITTLE SOMETHING DELICIOUS</span>
+                    <h2>Get fresh updates and special offers.</h2>
+                    <p>Subscribe to hear about new dishes, seasonal favorites and exclusive deals.</p>
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <label class="visually-hidden" for="newsletterEmail">Email address</label>
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe <span>↗</span></button>
+                    <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow"><span class="eyebrow-line"></span> GET IN TOUCH</span>
+                        <h2>Let's make your next meal <span>special.</span></h2>
+                        <p>Questions, feedback or a special request? We'd love to hear from you.</p>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <article class="contact-item">
+                            <span class="contact-icon">⌖</span>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>Your restaurant address goes here</p>
+                            </div>
+                        </article>
+
+                        <article class="contact-item">
+                            <span class="contact-icon">◷</span>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Monday – Sunday</p>
+                                <p>11:00 AM – 11:00 PM</p>
+                            </div>
+                        </article>
+
+                        <article class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <div>
+                                <h3>Email Us</h3>
+                                <a href="mailto:hello@cravekitchen.example">hello@cravekitchen.example</a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Choose a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Food Feedback">Food Feedback</option>
+                                <option value="Order Question">Order Question</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message</label>
+                            <textarea id="contactMessage" name="message" rows="5"
+                                placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message <span>↗</span></button>
+                        <p class="form-message" id="contactFormMessage" aria-live="polite"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span class="logo-text">Crave<span>Kitchen</span></span>
+                </a>
+
+                <p>Good food, warm moments and flavors that bring people together. Your next favorite meal is waiting.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="TikTok">TK</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#specials">Specials</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Helpful Links</h3>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Customer Support</a>
+                <a href="#menu">Popular Dishes</a>
+                <a href="#contact">Feedback</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Visit Crave Kitchen</h3>
+                <p>Freshly prepared meals for every craving.</p>
+                <p>Monday – Sunday</p>
+                <p>11:00 AM – 11:00 PM</p>
+                <a href="#contact" class="footer-cta">Get in Touch ↗</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="currentYear">2026</span> Crave Kitchen. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#contact">Privacy Policy</a>
+                <a href="#contact">Terms of Service</a>
+            </div>
+        </div>
+
+        <div class="powered-by">
+            <span>Powered by</span>
+            <a href="https://arslan-weblab.netlify.app/" target="_blank" rel="noopener noreferrer" class="powered-logo">
+                <img src="logo.webp" alt="My Codelab logo" onerror="this.style.display='none'">
+
+                <span>My Codelab</span>
+            </a>
+            <a href="https://arslan-weblab.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="powered-link">Build your website ↗</a>
+        </div>
+        <div class="demo-notice">
+            <strong>Demo Project</strong>
+            <span>This website is a frontend demo created for portfolio purposes.</span>
+        </div>
+    </footer>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <div>
+                <span class="eyebrow">YOUR ORDER</span>
+                <h2>Your Shopping Cart</h2>
+            </div>
+            <button type="button" class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <span>♧</span>
+                <h3>Your cart is empty</h3>
+                <p>Add something delicious from our menu.</p>
+                <button type="button" class="btn btn-primary" id="continueShopping">Explore Menu</button>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">Rs. 0</strong>
+            </div>
+            <p class="cart-note">Delivery fees and any applicable charges are calculated separately.</p>
+            <button type="button" class="btn btn-primary checkout-btn" id="checkoutButton" disabled>
+                Proceed to Checkout <span>↗</span>
+            </button>
+        </div>
+
+
+    </aside>
+
+    <div class="checkout-overlay" id="checkoutOverlay">
+        <div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+            <button type="button" class="modal-close" id="checkoutClose" aria-label="Close checkout">×</button>
+
+
+            <span class="eyebrow">ALMOST THERE</span>
+            <h2 id="checkoutTitle">Complete Your Order</h2>
+            <p>Enter your details to prepare your order summary.</p>
+
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" name="customerName" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required
+                        placeholder="Your contact number">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerAddress">Delivery Address</label>
+                    <textarea id="customerAddress" name="customerAddress" rows="3" required
+                        placeholder="House number, street, city"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                        <option value="Pay at Pickup">Pay at Pickup</option>
+                    </select>
+                </div>
+
+                <div class="checkout-total">
+                    <span>Order Total</span>
+                    <strong id="checkoutTotal">Rs. 0</strong>
+                </div>
+
+                <button type="submit" class="btn btn-primary checkout-submit">Prepare Order Summary</button>
+                <p class="form-message" id="checkoutMessage" aria-live="polite"></p>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
